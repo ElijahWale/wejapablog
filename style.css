@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+img{
+    max-width: 100%;
+}
+.navbar{
+    background-color: #362953!important;
+}
+.nav-link{
+    color: #fff !important;
+}
+.navbar-brand{
+    color: #fff !important;
+}
+span.navbar-toggler-icon{
+    background-color: #fff!important;
+}
+.header_blog{
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    
+}
+.blog_header{
+    padding: 150px 0;
+    color: #fff;
+    text-align: center;
+    
+}
+.blog__heading{
+    font-size: 4rem;
+}
+section{
+    background-color: #33264E;
+    padding: 100px 0;
+    color: #fff;
+}
+.blog-image{
+    width: 380px;
+    height: 300px;
+}
+.blog{
+    display: flex !important;
+    background-color: #362953;
+    box-shadow: 15px 15px 15px 15px #31244A;
+    margin-bottom: 20px;
+    
+    
+}
+.btn-blog{
+    background-color: #FF6374!important;  
+    border: 1px solid #000;
+    margin-left: 200px;
+    margin-bottom: -100px;
+
+}
+
+.btn-blog a{
+    color: #fff!important;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.btn-blog a{
+    text-decoration: none;
+}
+.row .col-md-5{
+    padding-left: 0;
+    padding-right: 0;
+}
+.blog__text{
+    padding: 50px 15px 10px 15px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+
+}
+/* about section */
+.about_image{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.social-icons{
+    background-color: #FF6374;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 5px;
+}
+.fab{
+    font-size: 20px;
+}
+.fab + .fab{
+    margin-left: 10px;
+}
+.icon{
+    color: #FF6374;
+}
+.about__text{
+    text-align: justify;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+/* 2nd page */
+.blog-single{
+    background-color: #5D4D6C;
+}
+.blog-single_post{
+    background-color: #362953;
+    box-shadow: 10px 10px 10px 10px #000 ;
+    
+}
+.blog-single__text{
+    padding: 20px 40px;
+}
+.blog-single__text h2{
+    font-size: 2.5rem;
+}
+.blog-small{
+    font-size: 14px;
+}
+.blog-single__text p{
+    text-align: justify;
+}
+
+/* for screens smaller than  600px */
+@media (max-width: 600px){
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-blog{
+        margin-bottom: 0;
+        margin-left: 100px;
+    }
+    .blog__heading{
+        background-color: #362953;
+    }
+}
