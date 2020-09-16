@@ -1,15 +1,6 @@
 <?php include "core/db.php"; 
 
-function shortenText($text, $limit = 100) {
-  $text = $text. " ";
-  $text = substr($text, 0, $limit);
-  $text = substr($text, 0, strrpos($text, ' '));
-  $text = $text."...";
-
-  return $text;
-
-  
-}
+include "core/functions.php";
 ?>
 <!Doctype html>
 <html lang="en">

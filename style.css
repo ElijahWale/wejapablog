@@ -52,7 +52,7 @@ section{
     display: flex !important;
     background-color: #362953;
     box-shadow: 15px 15px 15px 15px #31244A;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
     
 }
@@ -60,7 +60,7 @@ section{
     background-color: #FF6374!important;  
     border: 1px solid #000;
     margin-left: 200px;
-    margin-bottom: -100px;
+    margin-top: -100px;
 
 }
 
@@ -70,7 +70,7 @@ section{
     font-weight: bold;
     
 }
-.btn-blog a{
+.btn-blog a:hover{
     text-decoration: none;
 }
 .row .col-md-5{
@@ -79,7 +79,7 @@ section{
 }
 .blog__text{
     padding: 50px 15px 10px 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     color: #FFFFFF;
 
 }
@@ -132,6 +132,11 @@ section{
 .blog-single__text p{
     text-align: justify;
 }
+.red{
+    color: crimson;
+}
+
+/* login style */
 
 /* for screens smaller than  600px */
 @media (max-width: 600px){

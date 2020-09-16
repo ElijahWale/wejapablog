@@ -8,13 +8,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Dashboard</a>
+                <a class="navbar-brand" href="./dashboard.php">User Dashboard</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                
                 <li class="nav-item active">
                     <a class="nav-link" href="./../index.php">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./logout.php">LogOut </a>
                 </li>
                 
             
@@ -28,6 +31,9 @@
                     <li>
                         <a href="add_post.php"><i class="fa fa-fw fa-edit"></i> Add Post</a>
                     </li>
+                    <?php
+                   checkAdminCategory();
+                    ?>
                     
                 </ul>
             </div>

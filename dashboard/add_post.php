@@ -48,9 +48,9 @@
                                     } else {
                                         // this is responsible for moving the image into the images folder
                                         move_uploaded_file($file_temp, $post_image);
-
+                                        $user_id = $_SESSION['user_id'];
                                         // query database
-                                        $sql = "INSERT INTO posts (`title`, `content`, `author`, `image`) VALUES ('$post_title', '$post_content', '$post_author', '$post_image')";
+                                        $sql = "INSERT INTO posts (`title`, `content`, `author`, `image`) VALUES ('$post_title', '$post_content', '$post_author', '$post_image') WHERE user_id = $user_id";
                                         $query = mysqli_query($db_connect, $sql);
 
                                         if ($query) {

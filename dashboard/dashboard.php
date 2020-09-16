@@ -1,5 +1,10 @@
-<?php include "includes/header.php" ?>
+<?php include "includes/header.php"; 
 
+// if user is not logged in 
+if(!isset($_SESSION['username']) && empty($_SESSION['username'])){
+    header("location: login.php");
+}
+?>
 <body>
 
     <div id="wrapper">
@@ -13,7 +18,7 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">User Dashboard</h1>
+                        <h1 class="page-header">User <?= $_SESSION['username']; ?></h1>
                            
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">

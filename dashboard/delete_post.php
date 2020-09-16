@@ -2,8 +2,8 @@
 
 if(isset($_GET['delete-post'])){
         $p_id = $_GET['delete-post'];
-
-        $sql = "DELETE FROM posts WHERE id = $p_id";
+        $user_id = $_SESSION['user_id'];
+        $sql = "DELETE FROM posts WHERE id = $p_id AND user_id = $user_id";
         $query = mysqli_query($db_connect, $sql);
         if(!$query){
             echo "query error: " . mysqli_error($db_connect);

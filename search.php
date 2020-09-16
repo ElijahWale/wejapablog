@@ -39,20 +39,20 @@
                           $title = $row['title'];
                           $content = $row['content'];
                           $image = $row['image'];
-                          $date = formatDate($row['date']); 
+                          $date = $row['date']; 
                           ?>
 
                    
-                    <div class="blog d-flex mt-5">
+                    <div class="blog d-flex mt-4">
                         <div class="col-md-5">
-                           <a href="blog_post.php?p_id=<?=$post_id;?>"><img src="assets/<?= $image;?>" alt="blog image" class="blog-image"></a> 
+                            <img src="assets/<?= $image;?>" alt="blog image" class="blog-image">
                         </div>
                         <div class="blog__text col-md-6">
                             <h3><?= $title; ?></h3>
                             <p><?= shortenText($content); ?></p>
                             <div class="d-flex">
-                                <p class="blog-small mr-1"><i class="fas fa-user mr-2 icon"></i><?= $author; ?></p>
-                                <p class="blog-small ml-1"><i class="far fa-calendar-alt mr-2 icon"></i><?= $date; ?></p>
+                                <p class="blog-small mr-3"><i class="fas fa-user mr-2 icon"></i><?= $author; ?></p>
+                                <p class="blog-small"><i class="far fa-calendar-alt mr-2 icon"></i><?= $date; ?></p>
                             </div>
                            <button class="btn btn-blog"><a href="blog_post.php?p_id=<?=$post_id;?>">Continue Reading</a></button>
                         </div>

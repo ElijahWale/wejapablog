@@ -42,14 +42,14 @@
                               $title = $row['title'];
                               $content = $row['content'];
                               $image = $row['image'];
-                              $date = $row['date']; 
+                              $date = formatDate($row['date']); 
                         ?>
                         <img src="assets/<?= $image;?>" alt="blog_post image" class="blog_single_image">
                         <div class="blog-single__text">
                             <h2><?= $title; ?></h2>
                             <div class="d-flex">
                                 <p class="blog-small mr-3"><i class="fas fa-user mr-2 icon"></i><?= $author; ?></p>
-                                <p class="blog-small"><i class="far fa-calendar-alt mr-2 icon"></i><?= $date; ?></p>
+                                <p class="blog-small"><i class="far fa-calendar-alt mr-2 icon"></i><?= formatDate($date); ?></p>
                             </div>
                             <div>
                                 <p><?= $content; ?></p>
