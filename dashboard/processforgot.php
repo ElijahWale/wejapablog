@@ -65,7 +65,7 @@ include "../core/db.php";
                     $subject ="Password Reset link";
                     $message ="A password reset has been iniated from your account,if you did not initiate this reset,please 
                     ignore this message, otherwise visit:http://localhost/wejapablog/dashboard/resetpassword.php?token=" . $token;
-                    $headers = "From:no-reply@snh.org" ."\r\n".
+                    $headers = "From:no-reply@snh.org" . "\r\n" .
                     "CC:wale@snh.org";
                     mail($to, $subject, $message, $headers);
                     $_SESSION['success'] = "password reset has been sent to your email: " . $email;

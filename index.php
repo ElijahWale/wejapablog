@@ -1,22 +1,7 @@
 <?php include "includes/header.php"; ?>
   <body>
     <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Wejapa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="dashboard/dashboard.php">Dashboard</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
+    <?php include "includes/nav.php"; ?>
             <div class="header_blog">
                     <div class="blog_header">
                         <h2 class="blog__heading">Welcome to Wejapa Blog</h2>
@@ -67,9 +52,7 @@
                             <div class="input-group">
                                 <input type="text" name="search" class="form-control">
                                 <span class="input-group-btn">
-                                    <button name="submit" class="btn btn-default" type="submit">
-                                        <span class="glyphicon glyphicon-search">Search</span>
-                                </button>
+                                    <button name="submit" class="btn btn-primary" type="submit">Search</button>
                                 </span>
                                 
                             </div>

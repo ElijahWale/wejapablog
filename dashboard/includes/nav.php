@@ -12,13 +12,24 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-               
-                <li class="nav-item active">
+               <?php 
+               if(isset($_SESSION['user_id'])){ ?>
+                   <li class="nav-item active">
                     <a class="nav-link" href="./../index.php">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./logout.php">LogOut </a>
+                    </li>
+              <?php } else{ ?>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./login.php">Login </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="./logout.php">LogOut </a>
+                    <a class="nav-link" href="./signup.php">Sign Up </a>
                 </li>
+              <?php } ?>
+                
+                
                 
             
             </ul>
@@ -31,9 +42,7 @@
                     <li>
                         <a href="add_post.php"><i class="fa fa-fw fa-edit"></i> Add Post</a>
                     </li>
-                    <?php
-                   checkAdminCategory();
-                    ?>
+                   
                     
                 </ul>
             </div>

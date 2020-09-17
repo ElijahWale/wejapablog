@@ -13,8 +13,19 @@ img{
 .navbar{
     background-color: #362953!important;
 }
+a.nav-link:hover{
+    /* color: #000 !important; */
+    border-bottom: 2px solid #FF6374;
+
+}
+a.nav-link:active{
+    border-bottom: 2px solid #FF6374;
+
+}
+
 .nav-link{
     color: #fff !important;
+    text-transform: uppercase;
 }
 .navbar-brand{
     color: #fff !important;
@@ -23,7 +34,7 @@ span.navbar-toggler-icon{
     background-color: #fff!important;
 }
 .header_blog{
-    background-image: url(assets/background.jpg);
+    background-image: url(assets/leadership2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -60,7 +71,6 @@ section{
     background-color: #FF6374!important;  
     border: 1px solid #000;
     margin-left: 200px;
-    margin-top: -100px;
 
 }
 
@@ -72,6 +82,7 @@ section{
 }
 .btn-blog a:hover{
     text-decoration: none;
+   
 }
 .row .col-md-5{
     padding-left: 0;
@@ -82,6 +93,9 @@ section{
     margin-bottom: 5px;
     color: #FFFFFF;
 
+}
+span .btn-search{
+    color: #fff;
 }
 /* about section */
 .about_image{
